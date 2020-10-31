@@ -1,9 +1,10 @@
 # barcode-generator
+
 ║█║▌║█║▌│║▌█║▌║
 
 A simple console based barcode generator
 ## pre requerments
-</br>
+
 make sure all your software packages are updated
 
 ##### to upgrade all packages run this
@@ -16,19 +17,19 @@ now make sure `python 3000` is installed on your machine
 </br>
 now install python-barcode
 
-##### open your python interpreter and run the following command
+##### open your terminal and run the following command
 
-```python
->>> pip install python-barcode
+```bash
+$ pip install python-barcode
 ```
 ##### installing pillow
-```python
->>> pip install pillow
+```bash
+$ pip install pillow
 ```
 </br>
 
 ## run the script
-
+##### open your terminal and run the command
 ```bash
 $ cd barcode-generetor
 $ python barcode.py
