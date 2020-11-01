@@ -18,6 +18,7 @@ import sys
 import pip
 try:
     import barcode
+    import pillow
 except:
     print('this script need some additional packages:')
     choice = input('do you want to install them ?(y/n) ')
