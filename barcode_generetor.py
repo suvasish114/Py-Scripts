@@ -18,7 +18,6 @@ import sys
 import pip
 try:
     import barcode
-    import pillow
 except:
     print('this script need some additional packages:')
     choice = input('do you want to install them ?(y/n) ')
@@ -39,7 +38,7 @@ finally:
     class barcode_generator:
         def __init__(self, user_code):
             self.code = user_code
-        def generate(self):
+        def EAN_generate(self):
             self.ean = barcode.get('ean13', self.code)
             print('+----------------------+'+'\n| GENERATE SUCESSFULLY |'+'\n+----------------------+')
             self.filename = self.ean.save('barcode')
@@ -48,11 +47,13 @@ finally:
 
     # if run as a script
     if __name__ == '__main__':
-        bcd_code = input('ENTER THE CODE: ')
         try:
+            bcd_code = input('ENTER THE CODE (at least 12 digit): ')
             bcd_obj = barcode_generator(bcd_code)
-            bcd_obj.generate()
+            bcd_obj.EAN_generate()
+        except barcode.errors.NumberOfDigitsError:
+            print("Error !!\nYou must enter 12 digit...")
         except:
-            print("ERROR")
+            print("Oops :(\n something wrong happens...")
         else:
     	    sys.exit()
