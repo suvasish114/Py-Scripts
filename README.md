@@ -1,12 +1,5 @@
-# barcode-generator
-
-║█║▌║█║▌│║▌█║▌║
-
-A simple console based barcode generator
-
-## run the script
-##### open your terminal and run the command
-```bash
-$ cd barcode-generetor
-$ python barcode.py
-```
+<!-- Logo -->
+<p align="center">
+    <h1 align="center">Python Scripts</h1>
+    <p align="center">This project contains small python scripts.</p>
+</p>
